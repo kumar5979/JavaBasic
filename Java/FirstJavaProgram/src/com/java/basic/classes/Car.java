@@ -1,6 +1,6 @@
 package com.java.basic.classes;
 
-public class Car extends Country{
+public class Car{
 	
 	String make;
 	
@@ -16,11 +16,10 @@ public class Car extends Country{
 	Car(String make){
 		this.make= make;
 	}
-	
+
 	Car(String make,int model){
 		this(make);
-		this.model=model;
-		
+		this.model = model;
 	}
 	
 	Car(String make,int model,String type){
@@ -35,4 +34,12 @@ public class Car extends Country{
 		
 	}
 
+	public String getCarName(){
+		return make;
+	}
+	
+	public double getCarPrice(){
+		return price;	
+	}
+	
 }

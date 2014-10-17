@@ -1,25 +1,20 @@
 package com.java.basic.classes;
 
+/**
+ * 
+ * @author kumarveerappan
+ *
+ */
 public class AutoShop {
 
 	public static void main(String[] args) {
-		Car car = new Car();
-		car = null;
-		Car copyCar = car;
-		copyCar.make = "Honda";
-		copyCar.model = 2009;
-		copyCar.type = "seden";
-		copyCar.price = 7234.00;
-		copyCar.countryName = "India";
 		
-		System.out.println("Make : "+car.make);
-		System.out.println("Model : "+car.model);
-		System.out.println("Type : "+car.type);
-		System.out.println("Price : "+car.price);
+		Car car = new Car("Honda",2012,"seden",3000);
+		Car car1 = new Car("Acura",2012,"seden",2999);
 		
-		Car myCar = new Car("Ferreri",2014,"Coupe",300000);
-		Car ourCar = new Car("Mustang",2014,"Coupe",68000);
-		Car car1 = new Car("Acura",0,"",0);
+		System.out.println("Make of the Car is "+car.getCarName());
+		
+		System.out.println("Make of the Car is "+car1.getCarPrice());
 
 	}
 
